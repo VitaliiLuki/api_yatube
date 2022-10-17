@@ -42,9 +42,11 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 
+
 Примеры запросов к api:
 
+```
 примеры запросов смотри по адресу "root/redoc/"
-
+```
 
 
