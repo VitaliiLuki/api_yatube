@@ -1,57 +1,42 @@
-### Как запустить проект:
-
-Клонировать репозиторий и перейти в него в командной строке:
-
-```
-https://github.com/VitaliiLuki/api_final_yatube
-```
-
-```
-cd api_final_yatube
-```
-
-Cоздать и активировать виртуальное окружение:
-
-```
-python3 -m venv env
-```
-
-```
-source venv/bin/activate
-```
-
-```
-python3 -m pip install --upgrade pip
-```
-
-Установить зависимости из файла requirements.txt:
-
-```
-pip install -r requirements.txt
-```
-
-Выполнить миграции:
-
-```
-python3 manage.py migrate
-```
-
-Запустить проект:
-
-```
-python3 manage.py runserver
-```
+# Yatube API
+This is a API project where users can create, edit and comment on posts, subscribe to each other. View the latest posts of all users on the main page, or go to the subscriptions page and see posts only by the authors you like. Individual author profile pages and a detailed view of a particular post are also available.
 
 
-Примеры запросов к api:
+## Local setup
+> Clone repository and go to directory "yatube_api"
 
-```
-примеры запросов смотри по адресу "root/redoc/"
-```
+```git clone https://github.com/VitaliiLuki/api_yatube.git```
 
-### Описание эндпоинтов проекта:
+```cd yatube_api/```
 
-Получение списка/создание публикаций.
+>Create and activate virtual environment
+
+```python3 -m venv venv```
+
+```source venv/bin/activate```
+
+>Install all dependencies from requirements.txt
+
+```pip install --upgrade pip```
+
+```pip install -r requirements.txt```
+
+>Go to directory with a manage.py, make migrations and run server
+
+```cd yatube```
+
+```python3 manage.py migrate```
+
+```python3 manage.py runserver```
+
+
+>To watch API documentation go to redoc endpoint:
+
+```/redoc/```
+
+### Project endpoints description:
+
+Getting a list of/creating a posts.
 ```
 root/api/v1/posts/
 ```
