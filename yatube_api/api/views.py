@@ -11,6 +11,7 @@ from .permissions import IsAuthorOrReadOnlyPermission
 
 
 class CommentViewSet(viewsets.ModelViewSet):
+    """Gets, creates, edits or deletes comments to a certain post."""
     serializer_class = CommentSerializer
     permission_classes = (IsAuthorOrReadOnlyPermission,)
 
@@ -27,11 +28,13 @@ class CommentViewSet(viewsets.ModelViewSet):
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
+    """Gets a single group or list of groups."""
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
 
 
 class FollowViewSet(viewsets.ModelViewSet):
+    """Gets, creates, edits or deletes a subscription to a certain post."""
     serializer_class = FollowSerializer
     permission_classes = (IsAuthenticated,)
     filter_backends = (SearchFilter,)
@@ -47,6 +50,7 @@ class FollowViewSet(viewsets.ModelViewSet):
 
 
 class PostViewSet(viewsets.ModelViewSet):
+    """Gets, creates, edits or deletes a post."""
     queryset = Post.objects.all()
     permission_classes = (IsAuthorOrReadOnlyPermission,)
     serializer_class = PostSerializer

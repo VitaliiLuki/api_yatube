@@ -5,6 +5,7 @@ User = get_user_model()
 
 
 class Comment(models.Model):
+    """Stores a comments to a posts."""
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='comments')
     post = models.ForeignKey(
@@ -15,6 +16,7 @@ class Comment(models.Model):
 
 
 class Follow(models.Model):
+    """Stores a subscriptions of user."""
     following = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
@@ -28,6 +30,7 @@ class Follow(models.Model):
 
 
 class Group(models.Model):
+    """Stores the unique groups."""
     description = models.TextField(
         verbose_name='Краткое описание группы'
     )
@@ -45,6 +48,7 @@ class Group(models.Model):
 
 
 class Post(models.Model):
+    """Stores all information about posts."""
     author = models.ForeignKey(
         User,
         on_delete=models.CASCADE,

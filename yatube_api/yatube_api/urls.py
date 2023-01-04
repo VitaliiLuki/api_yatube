@@ -13,10 +13,6 @@ urlpatterns = [
         TemplateView.as_view(template_name='redoc.html'),
         name='redoc'
     )
-]
-
-if settings.DEBUG:
-    urlpatterns += static(
+] + static(
         settings.MEDIA_URL,
-        document_root=settings.MEDIA_ROOT
-    )
+        document_root=settings.MEDIA_ROOT)

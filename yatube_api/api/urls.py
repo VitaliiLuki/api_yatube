@@ -17,6 +17,6 @@ urlpatterns = [
     path('v1/', include(router_v1.urls)),
     # route for account creation
     path('v1/', include('djoser.urls.base')),
-    # routes for tokens
+    # route for tokens
     path('v1/', include('djoser.urls.jwt'))
 ]
