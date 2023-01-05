@@ -36,39 +36,39 @@ This is a API project where users can create, edit and comment on posts, subscri
 
 ### Project endpoints description:
 
-Getting/creating a posts.
+>Getting/creating a posts.
 ```
 /api/v1/posts/
 ```
-Getting/refreshing/partial update/deletion a post.
+>Getting/refreshing/partial update/deletion a post.
 ```
 /api/v1/posts/{id}/
 ```
-Getting/creating a comment.
+>Getting/creating a comment.
 ```
 /api/v1/posts/{id}/comments/
 ```
-Getting/refreshing/partial update/deletion a comment.
+>Getting/refreshing/partial update/deletion a comment.
 ```
 /api/v1/posts/{id}/comments/{id}/
 ```
-To get a group list.
+>To get a group list.
 ```
 /api/v1/groups/
 ```
-To get information about a group.
+>To get information about a group.
 ```
 /api/v1/groups/{id}/
 ```
-To subscribe/watch a subscriptions.
+>To subscribe/watch a subscriptions.
 ```
 /api/v1/follow/
 ```
-To creare a new user.
+>To creare a new user.
 ```
 /api/v1/users/
 ```
-To create/refresh/check JWT-token.
+>To create/refresh/check JWT-token.
 ```
 /api/v1/jwt/create/
 /api/v1/jwt/refresh/
