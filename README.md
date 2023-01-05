@@ -30,47 +30,47 @@ This is a API project where users can create, edit and comment on posts, subscri
 ```python3 manage.py runserver```
 
 
->To watch API documentation go to redoc endpoint:
+>To watch API documentation you need go to redoc endpoint:
 
 ```/redoc/```
 
 ### Project endpoints description:
 
-Getting a list of/creating a posts.
+Getting/creating a posts.
 ```
-root/api/v1/posts/
+/api/v1/posts/
 ```
-Получение/обновление/частичное обновление/удаление публикации.
+Getting/refreshing/partial update/deletion a post.
 ```
-root/api/v1/posts/{id}/
+/api/v1/posts/{id}/
 ```
-Получение/добавление комментариев.
+Getting/creating a comment.
 ```
-root/api/v1/posts/{id}/comments/
+/api/v1/posts/{id}/comments/
 ```
-Получение/обновление/частичное обновление/удаление комментариев.
+Getting/refreshing/partial update/deletion a comment.
 ```
-root/api/v1/posts/{id}/comments/{id}/
+/api/v1/posts/{id}/comments/{id}/
 ```
-Cписок сообществ.
+To get a group list.
 ```
-root/api/v1/groups/
+/api/v1/groups/
 ```
-Информация о сообществе.
+To get information about a group.
 ```
-root/api/v1/groups/{id}/
+/api/v1/groups/{id}/
 ```
-Подписаться/посмотреть подписки.
+To subscribe/watch a subscriptions.
 ```
-root/api/v1/follow/
+/api/v1/follow/
 ```
-Создать пользователя.
+To creare a new user.
 ```
-root/api/v1/users/
+/api/v1/users/
 ```
-Получить/обновить/проверить JWT token.
+To create/refresh/check JWT-token.
 ```
-root/api/v1/jwt/create/
-root/api/v1/jwt/refresh/
-root/api/v1/jwt/verify/
+/api/v1/jwt/create/
+/api/v1/jwt/refresh/
+/api/v1/jwt/verify/
 ```
