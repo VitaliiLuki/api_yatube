@@ -1,5 +1,5 @@
 # Yatube API
-This is a API project where users can create, edit and comment on posts, subscribe to each other. View the latest posts of all users on the main page, or go to the subscriptions page and see posts only by the authors you like. Individual author profile pages and a detailed view of a particular post are also available.
+This is a API project where users can create, edit and comment on posts, subscribe to each other. Users can also watch the latest posts of all authors or watch a posts only from favorite authors.
 
 
 ## Local setup
